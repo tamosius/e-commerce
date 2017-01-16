@@ -21,13 +21,6 @@
 						<!-- ${feedback} selects FeedbackPojo object in ModelMap -->
 						<form id="contactForm" th:action="@{/contact}"
 							th:object="${feedback}" method="post" class="text-left">
-
-							<!-- *{email} refers to the email property in 'FeedbackPojo' object -->
-							<div class="form-group">
-								<label for="email" th:text="#{form.email}"></label> <input
-									type="email" id="email" th:field="*{email}"
-									class="form-control" />
-							</div>
 							
 							<div class="form-group">
 								<label for="firstName" th:text="#{form.firstName}"></label> <input
@@ -38,6 +31,13 @@
 							<div class="form-group">
 								<label for="lastName" th:text="#{form.lastName}"></label> <input
 									type="text" id="lastName" th:field="*{lastName}"
+									class="form-control" />
+							</div>
+							
+							<!-- *{email} refers to the email property in 'FeedbackPojo' object -->
+							<div class="form-group">
+								<label for="email" th:text="#{form.email}"></label> <input
+									type="email" id="email" th:field="*{email}"
 									class="form-control" />
 							</div>
 							
