@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$(".btn-collapse").click(function(event){
 		
 		var $collapseThis = $(this).closest(".collapse-group").find(".collapse");
-		$collapseThis.fadeToggle(500);
+		$collapseThis.fadeToggle(50);
 		//$collapseThis.collapse("toggle"); // alternative option
 		
 		event.preventDefault();
